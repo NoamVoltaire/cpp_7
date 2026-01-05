@@ -3,19 +3,18 @@
 
 int main(void)
 {
+	unsigned int i = 0;
+
 	try {
-		// Test default constructor
 		Array<int> defaultArray;
 		std::cout << "Default array size: " << defaultArray.size() << "\n" << std::endl;
 		
-		// Test parameterized constructor
 		Array<int> intArray(5);
 		std::cout << "Int array size: " << intArray.size() << std::endl;
 
-		// Assign values to the array
 		for (unsigned int i = 0; i < intArray.size(); i++)
 			intArray[i] = i * 10;
-		// Print values
+
 		std::cout << "Int array values: ";
 		for (unsigned int i = 0; i < intArray.size(); i++)
 			std::cout << intArray[i] << " ";
