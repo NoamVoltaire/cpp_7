@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	unsigned int i = 0;
+	//unsigned int i = 0;
 
 	try {
 		Array<int> defaultArray;

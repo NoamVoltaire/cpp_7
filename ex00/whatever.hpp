@@ -40,7 +40,7 @@ const T	max(const T &a, const T &b)
 template <size_t L1, size_t L2>
 const char	(*min(const char (&a)[L1], const char (&b)[L2]))
 {
-	if(strcmp(a,b) < 0)
+	if(strcmp(a,b) < 0 && L1 < L2)
 		return (a);
 	else
 		return (b);
@@ -58,9 +58,9 @@ const char	(*min(const char (&a)[L], const char (&b)[L]))
 };
 
 template <size_t L1, size_t L2>
-const char	(*max(const char (&a)[L1], const char (&b)[L2]))
+const char	*max(const char (&a)[L1], const char (&b)[L2])
 {
-	if(strcmp(a,b) > 0)
+	if(strcmp(a,b) > 0 && L1 > L2)
 		return (a);
 	else
 		return (b);
