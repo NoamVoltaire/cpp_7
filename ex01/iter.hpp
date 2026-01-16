@@ -9,7 +9,7 @@ void	iter(A *array, const L len, void (*f)(A &))
 {
 	size_t 	i = 0;
 		
-	while (array[i] && i < len)
+	while (i < len)
 	{
 		f(array[i]);
 		i++;
