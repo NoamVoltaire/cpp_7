@@ -23,11 +23,12 @@ int	main(void)
 	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
 
 	//min and max also compares string literal
-	std::cout << "\nmin(\"chaine[1]\", \"chaine[2]\") ="
-		<< min("chaine[1]", "chaine[2]") << std::endl;
-	std::cout << "max(\"chaine[1]\", \"chaine[2]\") ="
-		<< max("chaine[1]", "chaine[2]") << std::endl;
-	std::cout << "max(\"chaine[1]\", \"biggest_chaine_here\") ="
-		<< max("chaine[1]", "biggest_chaine_here") << std::endl;
+	//if you uncomment in whathever.hpp
+	//std::cout << "\nmin(\"chaine[1]\", \"chaine[2]\") ="
+	//	<< min("chaine[1]", "chaine[2]") << std::endl;
+	//std::cout << "max(\"chaine[1]\", \"chaine[2]\") ="
+	//	<< max("chaine[1]", "chaine[2]") << std::endl;
+	//std::cout << "max(\"chaine[1]\", \"biggest_chaine_here\") ="
+	//	<< max("chaine[1]", "biggest_chaine_here") << std::endl;
 	
 }

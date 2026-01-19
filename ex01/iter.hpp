@@ -5,6 +5,18 @@
 #include <iostream>
 
 template <typename A, typename L>
+void	iter(const A *array, const L len, void (*f)(const A &))
+{
+	size_t 	i = 0;
+		
+	while (i < len)
+	{
+		f(array[i]);
+		i++;
+	}
+}
+
+template <typename A, typename L>
 void	iter(A *array, const L len, void (*f)(A &))
 {
 	size_t 	i = 0;
@@ -23,7 +35,7 @@ void	plus_one(E &elem)
 };
 
 template <typename E>
-void	print_elems(E &elem)
+void	print_elems(const E &elem)
 {
 	std::cout << elem << " ";
 

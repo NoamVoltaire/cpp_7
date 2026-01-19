@@ -7,13 +7,14 @@ int	main(void)
 	int	tab[] = {1,2,3,4,5};
 	size_t	len = 6;
 
+
 	std::cout << txt << std::endl;
 	::iter(txt, len, plus_one);
-	std::cout << txt << std::endl;
+	std::cout << txt << "\n" << std::endl;
 	
 	//::iter(consttxt, len, plus_one); // should not compile
 	::iter(consttxt, len, print_elems);
-	std::cout << std::endl;
+	std::cout << "\n" << std::endl;
 
 	::iter(tab, sizeof(tab) / sizeof(int), print_elems);
 	std::cout << std::endl;
