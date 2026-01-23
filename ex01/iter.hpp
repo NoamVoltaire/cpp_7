@@ -9,10 +9,13 @@ void	iter(const A *array, const L len, void (*f)(const A &))
 {
 	size_t 	i = 0;
 		
-	while (i < len)
+	if(array)
 	{
-		f(array[i]);
-		i++;
+		while (i < len)
+		{
+			f(array[i]);
+			i++;
+		}
 	}
 }
 
@@ -21,10 +24,13 @@ void	iter(A *array, const L len, void (*f)(A &))
 {
 	size_t 	i = 0;
 		
-	while (i < len)
+	if(array)
 	{
-		f(array[i]);
-		i++;
+		while (i < len)
+		{
+			f(array[i]);
+			i++;
+		}
 	}
 }
 
@@ -40,4 +46,5 @@ void	print_elems(const E &elem)
 	std::cout << elem << " ";
 
 }
+
 #endif
